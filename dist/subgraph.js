@@ -45,7 +45,6 @@ function fetchSubgraphPools(SubgraphUrl = '') {
         }
       }
     `;
-        console.log(`fetchSubgraphPools: ${SubgraphUrl === '' ? SUBGRAPH_URL : SubgraphUrl}`);
         const response = yield isomorphic_fetch_1.default(SubgraphUrl === '' ? SUBGRAPH_URL : SubgraphUrl, {
             method: 'POST',
             headers: {
